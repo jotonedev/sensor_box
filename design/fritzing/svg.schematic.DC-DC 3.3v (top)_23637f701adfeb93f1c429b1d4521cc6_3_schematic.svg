@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  id="svg2" viewBox="0 0 400 500.00001" height="45" y="0in" gorn="0" width="36" x="0in" version="1.2">
+    <metadata  id="metadata46">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs  id="defs44"/>
+    <desc  id="desc4">
+        <referenceFile  id="referenceFile6">generic_ic_dip_8_schem.svg</referenceFile>
+    </desc>
+    <g  transform="matrix(0.33333,0,0,0.33333,100.00129,-1.6645859)">
+        <g >
+            <g >
+                <g  id="g7" gorn="0.3.0.0.0">
+                    <g  id="g9" gorn="0.3.0.0.0.0">
+                        <g  id="g11" gorn="0.3.0.0.0.0.0">
+                            <g  id="schematic" gorn="0.3.0.0.0.0.0.0">
+                                <rect  id="rect9" fill="none" height="1467.1554" y="21.42363" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" gorn="0.3.0.0.0.0.0.0.0" stroke-width="32.85964203" width="567.14636" x="316.42896" stroke="#000000"/>
+                                <text  id="label0" fill="#8c8c8c" y="350" style="text-anchor:start;font-family:Droid Sans" font-size="130" gorn="0.3.0.0.0.0.0.0.1" x="390" stroke="none" fill-opacity="1">0</text>
+                                <rect  id="connector2pin" fill="none" height="30" y="589.99982" gorn="0.3.0.0.0.0.0.0.2" width="600" x="-300.00537" stroke="none"/>
+                                <rect  id="rect23" fill="none" height="30" y="589.99982" gorn="0.3.0.0.0.0.0.0.3" width="60" x="-300.00537" stroke="none"/>
+                                <text  id="label1" fill="#8c8c8c" y="645" style="text-anchor:start;font-family:Droid Sans" font-size="130" gorn="0.3.0.0.0.0.0.0.4" x="390" stroke="none" fill-opacity="1">1</text>
+                                <rect  id="connector1pin" fill="none" height="30" y="890.00281" gorn="0.3.0.0.0.0.0.0.5" width="600" x="-300.00537" stroke="none"/>
+                                <rect  id="rect30" fill="none" height="30" y="890.00281" gorn="0.3.0.0.0.0.0.0.6" width="60" x="-300.00537" stroke="none"/>
+                                <text  id="label2" y="940" style="font-size:130px;text-anchor:start;fill:#8c8c8c;fill-opacity:1;stroke:none;font-family:Droid Sans" font-size="130" gorn="0.3.0.0.0.0.0.0.7" x="390">2/VCC</text>
+                                <rect  id="connector0pin" fill="none" height="30" y="1190.0059" gorn="0.3.0.0.0.0.0.0.8" width="600" x="-300.00537" stroke="none"/>
+                                <rect  id="rect37" fill="none" height="30" y="1190.0059" gorn="0.3.0.0.0.0.0.0.9" width="60" x="-300.00537" stroke="none"/>
+                                <text  id="label3" y="1235" style="font-size:130px;text-anchor:start;fill:#8c8c8c;fill-opacity:1;stroke:none;font-family:Droid Sans" font-size="130" gorn="0.3.0.0.0.0.0.0.10" x="390">3/GND</text>
+                                <g  transform="matrix(13.888888,0,0,13.888888,55.147292,-786.8508)">
+                                    <g >
+                                        <g >
+                                            <g  id="g25" gorn="0.3.0.0.0.0.0.0.11.0.0.0">
+                                                <g  id="g27" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0">
+                                                    <g  id="g29" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0">
+                                                        <g  id="g792" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0">
+                                                            <g  id="g794" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0">
+                                                                <g  id="g366-3" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0">
+                                                                    <g  id="g368-8" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0">
+                                                                        <g  id="g3755-65" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0.0">
+                                                                            <line  id="connector5pin-4" x2="18.679327" fill="none" y2="78.613281" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0.0.0" y1="78.613281" class="pin" stroke="none"/>
+                                                                            <rect  id="connector5terminal-00" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0.0.1" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                            <line  id="connector3pin" x2="18.679327" fill="none" y2="78.613281" style="stroke-linecap:round" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0.0.2" stroke-width="2.10001731" y1="78.613281" class="pin" stroke="#787878"/>
+                                                                            <rect  id="connector60terminal-896" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.11.0.0.0.0.0.0.0.0.0.0.3" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="matrix(13.888888,0,0,13.888888,55.147292,-486.8478)">
+                                    <g >
+                                        <g >
+                                            <g  id="g40" gorn="0.3.0.0.0.0.0.0.12.0.0.0">
+                                                <g  id="g42" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0">
+                                                    <g  id="g44" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0">
+                                                        <g  id="g792-8" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0">
+                                                            <g  id="g794-9" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0">
+                                                                <g  id="g366-3-7" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0">
+                                                                    <g  id="g368-8-5" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0">
+                                                                        <g  id="g3755-65-2" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0.0">
+                                                                            <line  id="connector5pin-4-9" x2="18.679327" fill="none" y2="78.613281" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0.0.0" y1="78.613281" class="pin" stroke="none"/>
+                                                                            <rect  id="connector5terminal-00-8" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0.0.1" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                            <line  id="connector93pin-9" x2="18.679327" fill="none" y2="78.613281" style="stroke-linecap:round" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0.0.2" stroke-width="2.10001731" y1="78.613281" class="pin" stroke="#787878"/>
+                                                                            <rect  id="connector60terminal-896-1" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.12.0.0.0.0.0.0.0.0.0.0.3" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="matrix(13.888888,0,0,13.888888,55.147292,-186.84479)">
+                                    <g >
+                                        <g >
+                                            <g  id="g55" gorn="0.3.0.0.0.0.0.0.13.0.0.0">
+                                                <g  id="g57" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0">
+                                                    <g  id="g59" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0">
+                                                        <g  id="g792-1" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0">
+                                                            <g  id="g794-5" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0">
+                                                                <g  id="g366-3-6" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0">
+                                                                    <g  id="g368-8-9" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0">
+                                                                        <g  id="g3755-65-4" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0.0">
+                                                                            <line  id="connector5pin-4-5" x2="18.679327" fill="none" y2="78.613281" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0.0.0" y1="78.613281" class="pin" stroke="none"/>
+                                                                            <rect  id="connector5terminal-00-2" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0.0.1" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                            <line  id="connector93pin-94" x2="18.679327" fill="none" y2="78.613281" style="stroke-linecap:round" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0.0.2" stroke-width="2.10001731" y1="78.613281" class="pin" stroke="#787878"/>
+                                                                            <rect  id="connector60terminal-896-8" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.13.0.0.0.0.0.0.0.0.0.0.3" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g  transform="matrix(13.888888,0,0,13.888888,55.147292,113.15822)">
+                                    <g >
+                                        <g >
+                                            <g  id="g70" gorn="0.3.0.0.0.0.0.0.14.0.0.0">
+                                                <g  id="g72" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0">
+                                                    <g  id="g74" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0">
+                                                        <g  id="g792-4" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0">
+                                                            <g  id="g794-8" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0">
+                                                                <g  id="g366-3-63" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0">
+                                                                    <g  id="g368-8-97" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0">
+                                                                        <g  id="g3755-65-49" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0.0">
+                                                                            <line  id="connector5pin-4-7" x2="18.679327" fill="none" y2="78.613281" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0.0.0" y1="78.613281" class="pin" stroke="none"/>
+                                                                            <rect  id="connector5terminal-00-5" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0.0.1" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                            <line  id="connector93pin-4" x2="18.679327" fill="none" y2="78.613281" style="stroke-linecap:round" x1="-24.521095" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0.0.2" stroke-width="2.10001731" y1="78.613281" class="pin" stroke="#787878"/>
+                                                                            <rect  id="connector60terminal-896-4" fill="none" height="2.1000173" y="77.563026" gorn="0.3.0.0.0.0.0.0.14.0.0.0.0.0.0.0.0.0.0.3" width="2.1000173" x="-26.621111" class="terminal" stroke="none"/>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

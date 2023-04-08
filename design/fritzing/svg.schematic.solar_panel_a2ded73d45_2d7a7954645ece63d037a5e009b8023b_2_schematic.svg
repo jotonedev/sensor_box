@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" height="0.809701in" fill-rule="evenodd" width="1.01321in" xmlns:xml="http://www.w3.org/XML/1998/namespace" image-rendering="optimizeQuality" gorn="0" viewBox="0 0 6769375 5409693"  xml:space="preserve" id="svg2055" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" version="1.1" clip-rule="evenodd">
+    <desc >
+        <referenceFile >svg.schematic.solar_cell.svg</referenceFile>
+    </desc>
+    <defs  id="defs2059"/>
+    <g gorn="0.2"  id="schematic">
+        <metadata  id="CorelCorpID_0Corel-Layer"/>
+        <rect height="5344881" width="5344881" gorn="0.2.1"  id="rect2032" y="32397" stroke-width="64811.9" fill="#FEFEFE" x="1392089" stroke="#373435"/>
+        <line x1="55869" stroke-linejoin="round" y1="1034571" gorn="0.2.2"  id="connector0pin" stroke-width="64943.5" x2="1392089" y2="1034571" fill="none" stroke="black" stroke-linecap="round"/>
+        <rect height="19307" width="50661" gorn="0.2.3"  id="connector0terminal" y="1025654" fill="none"/>
+        <g transform="matrix(1 0 0 1 603246 -2.10936E+006)" >
+            <g >
+                <g >
+                    <g gorn="0.2.4.0.0.0"  id="g2038">
+                        <text font-size="324770" font-family="Droid Sans" font-weight="normal" gorn="0.2.4.0.0.0.0"  id="text2036" y="3049291" fill="#4B4B4D" x="-38798">1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <line x1="55869" stroke-linejoin="round" y1="1702681" gorn="0.2.5"  id="connector1pin" stroke-width="64943.5" x2="1392089" y2="1702681" fill="none" stroke="black" stroke-linecap="round" text-anchor="middle"/>
+        <rect height="19307" width="50661" gorn="0.2.6"  id="connector1terminal" y="1693764" fill="none"/>
+        <g transform="matrix(1 0 0 1 603246 -1.44125E+006)" >
+            <g >
+                <g >
+                    <g gorn="0.2.7.0.0.0"  id="g2044">
+                        <text font-size="324770" font-family="Droid Sans" font-weight="normal" gorn="0.2.7.0.0.0.0"  id="text2042" y="3049291" fill="#4B4B4D" x="-38798">2</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <polygon points="1756183,1029758 1650942,1029758 1650942,989013 1756183,989013 1756183,883247 1797006,883247 1797006,989013 1902141,989013 1902141,1029758 1797006,1029758 1797006,1134419 1756183,1134419 " fill-rule="nonzero" gorn="0.2.8"  id="polygon2048" fill="#373435"/>
+        <polygon points="1660885,1715991 1660885,1670354 1892198,1670354 1892198,1715991 " fill-rule="nonzero" gorn="0.2.9"  id="polygon2050" fill="#373435"/>
+        <text font-size="389740" font-family="OCRA" font-weight="500" gorn="0.2.10"  id="text2052" y="3204614" fill="#373435" x="2538871">SOLAR PANEL</text>
+        <g transform="matrix(69594.969,0,0,69594.969,0,-7.2316959)" >
+            <g >
+                <g >
+                    <path d="M 19.546467,51.366297 V 25.001295 h 0.278718 c 0.153295,0 0.357851,-0.04235 0.454569,-0.09411 0.173668,-0.09295 0.175851,0.228672 0.175851,25.910432 V 76.82216 H 58.412116 96.368627 V 38.865649 0.90913799 H 58.412116 20.455605 V 7.7458557 c 0,5.3174473 -0.02424,6.8124733 -0.109097,6.7276213 -0.06,-0.06 -0.264559,-0.109097 -0.454569,-0.109097 H 19.546467 V 7.1821901 0 H 58.366659 97.186852 V 38.865649 77.731298 H 58.366659 19.546467 Z" gorn="0.2.11.0.0.0"  id="path2193" stroke-width="0.0909138" fill="#000000"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(69594.969,0,0,69594.969,0,-7.2316959)" >
+            <g >
+                <g >
+                    <path d="" gorn="0.2.12.0.0.0"  id="path2195" stroke-width="0.0909138" fill="#000000"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(69594.969,0,0,69594.969,0,-7.2316959)" >
+            <g >
+                <g >
+                    <path d="" gorn="0.2.13.0.0.0"  id="path2197" stroke-width="0.0909138" fill="#000000"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(69594.969,0,0,69594.969,0,-7.2316959)" >
+            <g >
+                <g >
+                    <path d="m 20.319234,24.092157 c -0.0309,-0.05 -0.217418,-0.09091 -0.414477,-0.09091 h -0.35829 v -4.318405 -4.318406 h 0.345472 c 0.19001,0 0.394566,-0.04909 0.454569,-0.109096 0.08485,-0.08485 0.109097,0.894995 0.109097,4.409319 0,2.485129 -0.01804,4.518416 -0.04009,4.518416 -0.02205,0 -0.06538,-0.04091 -0.09628,-0.09091 z" gorn="0.2.14.0.0.0"  id="path2199" stroke-width="0.0909138" fill="#000000"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(69594.969,0,0,69594.969,0,-7.2316959)" >
+            <g >
+                <g >
+                    <path d="m 25.274036,15.500803 v -0.772768 h -0.772767 c -0.763676,0 -0.772767,-0.0027 -0.772767,-0.227284 0,-0.224611 0.0091,-0.227285 0.772767,-0.227285 h 0.772767 v -0.772767 -0.772767 h 0.272742 0.272741 v 0.772767 0.772767 h 0.72731 c 0.715189,0 0.727311,0.0038 0.727311,0.227285 0,0.223496 -0.01212,0.227284 -0.727311,0.227284 h -0.72731 v 0.772768 0.772767 h -0.272741 -0.272742 z" gorn="0.2.15.0.0.0"  id="path2203" stroke-width="0.0909138" fill="#000000"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

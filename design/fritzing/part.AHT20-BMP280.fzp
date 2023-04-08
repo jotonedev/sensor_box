@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<module fritzingVersion="0.5.2b.02.18.4756" moduleId="AHT20-BMP280" referenceFile="AHT20-BMP280.fzp">
+  <version>1</version>
+  <date>mer. oct. 26 2022</date>
+  <author>Damien Varrel</author>
+  <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt;"&gt;Cheap breakout board for the BMP280, barometric pressure sensor, and AHT20, humidity sensor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <title>AHT20 BMP280 pressure and humidity breakout</title>
+  <url/>
+  <tags>
+    <tag>Pressure</tag>
+    <tag>AHT20</tag>
+    <tag>BMP280</tag>
+    <tag>sensor</tag>
+  </tags>
+  <properties>
+    <property name="Chip">BMP280 AHT20</property>
+    <property name="mn"/>
+    <property name="variant">variant 1</property>
+    <property name="part number"/>
+    <property name="family">pressure humidity sensor breakout</property>
+    <property name="mpn"/>
+    <property name="layer"/>
+  </properties>
+  <views>
+    <breadboardView>
+      <layers image="breadboard/AHT20-BMP280_breadboard.svg">
+        <layer layerId="breadboard"/>
+      </layers>
+    </breadboardView>
+    <schematicView>
+      <layers image="schematic/AHT20-BMP280_schematic.svg">
+        <layer layerId="schematic"/>
+      </layers>
+    </schematicView>
+    <pcbView>
+      <layers image="pcb/AHT20-BMP280_pcb.svg">
+        <layer layerId="copper1"/>
+        <layer layerId="silkscreen"/>
+        <layer layerId="copper0"/>
+      </layers>
+    </pcbView>
+    <iconView>
+      <layers image="breadboard/AHT20-BMP280_breadboard.svg">
+        <layer layerId="icon"/>
+      </layers>
+    </iconView>
+  </views>
+  <connectors>
+    <connector name="VDD" type="male" id="connector0">
+      <description>VDD</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector0pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p terminalId="connector0terminal" svgId="connector0pin" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector0pad" layer="copper0"/>
+          <p svgId="connector0pad" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector name="SDA" type="male" id="connector1">
+      <description>SDA</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector1pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p terminalId="connector1terminal" svgId="connector1pin" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector1pad" layer="copper0"/>
+          <p svgId="connector1pad" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector name="GND" type="male" id="connector2">
+      <description>GND</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector2pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p terminalId="connector2terminal" svgId="connector2pin" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector2pad" layer="copper0"/>
+          <p svgId="connector2pad" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector name="SCL" type="male" id="connector3">
+      <description>SCL</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector3pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p terminalId="connector3terminal" svgId="connector3pin" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector3pad" layer="copper0"/>
+          <p svgId="connector3pad" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+  </connectors>
+  <buses/>
+  <label>AHT</label>
+</module>

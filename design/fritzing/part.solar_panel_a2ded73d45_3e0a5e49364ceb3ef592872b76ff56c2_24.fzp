@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module referenceFile="generic_ic_dip_8_300mil.fzp" moduleId="solar_panel_a2ded73d45_3e0a5e49364ceb3ef592872b76ff56c2_24">
+ <version>4</version>
+ <author>jotone</author>
+ <title>Solar panel 1.25W</title>
+ <label>Solar cell</label>
+ <date>Tue Mar 21 2023</date>
+ <tags>
+  <tag>solar cell</tag>
+ </tags>
+ <properties>
+  <property name="pins">2</property>
+  <property name="family">Solar cell</property>
+  <property name="variant">1.25W</property>
+  <property name="chip label">solar_cell</property>
+  <property name="part number"></property>
+  <property name="layer"></property>
+  <property name="mn"></property>
+  <property name="mpn"></property>
+ </properties>
+ <taxonomy>part.dip.8.pins</taxonomy>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">6V 210mA 1.25W&lt;/p>
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>&lt;/body>&lt;/html></description>
+ <views>
+  <iconView>
+   <layers image="icon/solar_panel_a2ded73d45_2d7a7954645ece63d037a5e009b8023b_2_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+  <breadboardView>
+   <layers image="breadboard/solar_panel_a2ded73d45_2d7a7954645ece63d037a5e009b8023b_2_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/solar_panel_a2ded73d45_2d7a7954645ece63d037a5e009b8023b_2_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/solar_panel_a2ded73d45_2d7a7954645ece63d037a5e009b8023b_2_pcb.svg">
+    <layer layerId="silkscreen"/>
+    <layer layerId="copper0"/>
+    <layer layerId="copper1"/>
+   </layers>
+  </pcbView>
+ </views>
+ <connectors>
+  <connector name="V+" type="female" id="connector0">
+   <description>V+</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector0pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector0pin" terminalId="connector0terminal"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector0pin"/>
+     <p layer="copper1" svgId="connector0pin"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector name="V-" type="female" id="connector1">
+   <description>V-</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector1pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector1pin" terminalId="connector1terminal"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector1pin"/>
+     <p layer="copper1" svgId="connector1pin"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+ <url>https://it.aliexpress.com/item/1005002790768161.html?spm=a2g0o.order_list.order_list_main.30.7b4336965aBaIi&amp;gatewayAdapt=glo2ita</url>
+</module>

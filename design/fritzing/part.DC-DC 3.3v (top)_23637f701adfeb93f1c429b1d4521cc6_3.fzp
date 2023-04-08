@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module referenceFile="grove_generic.fzp" moduleId="DC-DC 3.3v (top)_23637f701adfeb93f1c429b1d4521cc6_3">
+ <version>4</version>
+ <author>Rafa G</author>
+ <title>DC-DC Power Module (3.3v)</title>
+ <label></label>
+ <date>jue. oct. 22 2015</date>
+ <tags>
+  <tag>DC-DC</tag>
+  <tag>power</tag>
+ </tags>
+ <properties>
+  <property name="variant">3.3v (top)</property>
+  <property name="family">DC-DC</property>
+ </properties>
+ <taxonomy>part.dip.8.pins</taxonomy>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">DC-DC Power Module based con AMS1117-3.3&lt;/p>
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Input: DC 4.5~7V (input power must higher 1V than output power); Output: 3.3V (+/-0.05V error), 800mA&lt;/p>&lt;/body>&lt;/html></description>
+ <views>
+  <iconView>
+   <layers image="icon/DC-DC 3.3v (top)_23637f701adfeb93f1c429b1d4521cc6_3_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+  <breadboardView>
+   <layers image="breadboard/DC-DC 3.3v (top)_23637f701adfeb93f1c429b1d4521cc6_3_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/DC-DC 3.3v (top)_23637f701adfeb93f1c429b1d4521cc6_3_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/DC-DC 3.3v (top)_23637f701adfeb93f1c429b1d4521cc6_3_pcb.svg">
+    <layer layerId="silkscreen"/>
+    <layer layerId="copper0"/>
+    <layer layerId="copper1"/>
+   </layers>
+  </pcbView>
+ </views>
+ <connectors>
+  <connector id="connector0" name="Vin" type="male">
+   <description>Input voltage (4.5v-7v)</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" terminalId="connector0terminal" svgId="connector0pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" terminalId="connector0terminal" svgId="connector0pin"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector0pin"/>
+     <p layer="copper1" svgId="connector0pin"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector1" name="GND" type="male">
+   <description>Commond ground</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" terminalId="connector1terminal" svgId="connector1pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" terminalId="connector1terminal" svgId="connector1pin"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector1pin"/>
+     <p layer="copper1" svgId="connector1pin"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector3" name="Vout" type="male">
+   <description>Output voltage (3.3v)</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" terminalId="connector3terminal" svgId="connector3pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" terminalId="connector3terminal" svgId="connector3pin"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector3pin"/>
+     <p layer="copper1" svgId="connector3pin"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector4" name="GND*" type="male">
+   <description>Common ground</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector4pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector4pin"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector4pin"/>
+     <p layer="copper1" svgId="connector4pin"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+ <url>http://minibots.wordpress.com</url>
+</module>

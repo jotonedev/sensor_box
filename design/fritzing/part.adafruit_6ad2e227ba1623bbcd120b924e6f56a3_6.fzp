@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module moduleId="adafruit_6ad2e227ba1623bbcd120b924e6f56a3_6" referenceFile="LiPoly_Battery__1300mAh___bc55d3710a708443197b3fc3d08dd188.fzp" fritzingVersion="0.7.5b.07.02.6130">
+ <author>Adafruit</author>
+ <title>Lithium Ion Cylindrical Battery 3.7v 2200mAh</title>
+ <label/>
+ <date>Mon Aug 29 2016</date>
+ <url>https://www.adafruit.com/products/1781</url>
+ <tags/>
+ <properties>
+  <property name="family">Adafruit Lithium Ion</property>
+  <property name="variant">2200mAh</property>
+  <property name="part number">1781</property>
+  <property name="layer"></property>
+ </properties>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Helvetica'; color:#454545;">This lithium ion battery has a capacity of 2200mAh and a protection circuit that provides over-voltage, under-voltage and over-current protection. This cell can provide 2C of peak current (4400mA). Note that these batteries are not designed to sustain such high loads, we suggest keeping any constant current draw under about 0.5C (1 Amp).&lt;/span>&lt;/p>&lt;/body>&lt;/html></description>
+ <views>
+  <iconView>
+   <layers image="icon/adafruit_ebc4d0a9ea5190e9b630cf6faf65e6ef_2_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+  <breadboardView>
+   <layers image="breadboard/adafruit_ebc4d0a9ea5190e9b630cf6faf65e6ef_2_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/adafruit_ebc4d0a9ea5190e9b630cf6faf65e6ef_2_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/adafruit_ebc4d0a9ea5190e9b630cf6faf65e6ef_2_pcb.svg">
+    <layer layerId="copper0"/>
+    <layer layerId="silkscreen"/>
+   </layers>
+  </pcbView>
+ </views>
+ <connectors>
+  <connector name="positive" id="connector1" type="male">
+   <description>no description yet</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector1pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector1pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector1pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector name="negative" id="connector2" type="male">
+   <description>no description yet</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector2pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector2pin" layer="schematic"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector2pin" layer="copper0"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+</module>

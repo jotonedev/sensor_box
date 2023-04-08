@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<module moduleId="CN3065-Mini-Solar-Charger-Module_1" referenceFile="CN3065-Mini-Solar-Charger-Module_1.fzp" fritzingVersion="0.9.10">
+  <version>1</version>
+  <author>Peter Van Epp (vanepp in forums)</author>
+  <title>CN3065 Mini Solar Charger Module</title>
+  <label>A</label>
+  <date>Fri Jul 1 2022</date>
+  <tags>
+    <tag>contrib</tag>
+    <tag>CN3065 Mini Solar Charger Module</tag>
+    <tag>fritzing user</tag>
+  </tags>
+  <properties>
+    <property name="variant">variant 1</property>
+    <property name="family">CN3065 Mini Solar Charger Module</property>
+    <property name="editable pin labels">false</property>
+    <property name="part number"/>
+    <property name="layer"/>
+  </properties>
+  <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Fc-51 Infrared Obstacle Avoidance Proximity Sensor module. IR transmitter led, receiver LED, lm393 compaitor and a pot. 3.3 V to 5V power.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+  <views>
+    <iconView>
+      <layers image="breadboard/CN3065-Mini-Solar-Charger-Module_1_breadboard.svg">
+        <layer layerId="icon"/>
+      </layers>
+    </iconView>
+    <breadboardView>
+      <layers image="breadboard/CN3065-Mini-Solar-Charger-Module_1_breadboard.svg">
+        <layer layerId="breadboard"/>
+      </layers>
+    </breadboardView>
+    <schematicView>
+      <layers image="schematic/CN3065-Mini-Solar-Charger-Module_1_schematic.svg">
+        <layer layerId="schematic"/>
+      </layers>
+    </schematicView>
+    <pcbView>
+      <layers image="pcb/CN3065-Mini-Solar-Charger-Module_1_pcb.svg">
+        <layer layerId="silkscreen"/>
+        <layer layerId="copper0"/>
+        <layer layerId="copper1"/>
+      </layers>
+    </pcbView>
+  </views>
+  <connectors>
+    <connector id="connector0" type="male" name="Pin 1">
+      <description>Solar+</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector0pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector0pin" layer="schematic" terminalId="connector0terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+    <connector id="connector1" type="male" name="Pin 2">
+      <description>Solar-</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector1pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector1pin" layer="schematic" terminalId="connector1terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+    <connector id="connector2" type="male" name="Pin 3">
+      <description>Solar+</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector2pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector2pin" layer="schematic" terminalId="connector2terminal"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector2pin" layer="copper0"/>
+          <p svgId="connector2pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector id="connector3" type="male" name="Pin 4">
+      <description>Solar-</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector3pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector3pin" layer="schematic" terminalId="connector3terminal"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector3pin" layer="copper0"/>
+          <p svgId="connector3pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector id="connector4" type="male" name="Pin 5">
+      <description>Batt-</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector4pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector4pin" layer="schematic" terminalId="connector4terminal"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector4pin" layer="copper0"/>
+          <p svgId="connector4pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector id="connector5" type="male" name="Pin 6">
+      <description>Batt+</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector5pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector5pin" layer="schematic" terminalId="connector5terminal"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector5pin" layer="copper0"/>
+          <p svgId="connector5pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector id="connector6" type="male" name="Pin 7">
+      <description>Batt+</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector6pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector6pin" layer="schematic" terminalId="connector6terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+    <connector id="connector7" type="male" name="Pin 8">
+      <description>Batt-</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector7pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector7pin" layer="schematic" terminalId="connector7terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+    <connector id="connector8" type="male" name="Pin 9">
+      <description>Out+</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector8pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector8pin" layer="schematic" terminalId="connector8terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+    <connector id="connector9" type="male" name="Pin 10">
+      <description>Out-</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector9pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector9pin" layer="schematic" terminalId="connector9terminal"/>
+        </schematicView>
+        <pcbView>
+          </pcbView>
+      </views>
+    </connector>
+  </connectors>
+  <buses>
+    <bus id="GND">
+      <nodeMember connectorId="connector1"/>
+      <nodeMember connectorId="connector3"/>
+      <nodeMember connectorId="connector4"/>
+      <nodeMember connectorId="connector7"/>
+      <nodeMember connectorId="connector9"/>
+    </bus>
+    <bus id="Solar+">
+      <nodeMember connectorId="connector0"/>
+      <nodeMember connectorId="connector2"/>
+    </bus>
+    <bus id="Batt+">
+      <nodeMember connectorId="connector5"/>
+      <nodeMember connectorId="connector6"/>
+      <nodeMember connectorId="connector8"/>
+    </bus>
+  </buses>
+  <url>https://de.aliexpress.com/item/4000590695602.html?gatewayAdapt=glo2deu</url>
+</module>
