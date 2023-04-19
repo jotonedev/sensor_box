@@ -1,3 +1,5 @@
-"ignoredFiles": [
-    "design/fritzing/*"
-]
+{
+    "ignoredFiles": [
+        "design/fritzing/*"
+    ]
+}
