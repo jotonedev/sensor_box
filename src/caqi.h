@@ -4,9 +4,7 @@
 #include <Arduino.h>
 
 int calculate_caqi(uint16_t pm25, uint16_t pm10);
-
 inline int calculate_caqi_pm10(uint16_t pm10);
-
 inline int calculate_caqi_pm25(uint16_t pm25);
 
 

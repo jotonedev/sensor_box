@@ -22,5 +22,6 @@ const char *topic_pm25 = "box01/pm25";
 const char *topic_pm100 = "box01/pm100";
 const char *topic_h2 = "box01/h2";
 const char *topic_ethanol = "box01/ethanol";
+const char *topic_err = "box01/error";
 
 #endif

@@ -14,7 +14,6 @@
 #include "conf.h"
 #include "utils.h"
 
-
 #ifdef DEBUG
 #define DEBUG_PRINT(x) Serial.println(x)
 #else
@@ -24,20 +23,15 @@
 
 // Forward declarations
 void wifiConnect();
-
 void pmsMeasure();
-
 void ahtMeasure(TempData &temp_data);
-
 void bmpMeasure(TempData &temp_data);
-
 void sgpMeasure();
-
-void sgpUpdateBaseline(TempData &temp_data);
-
+void sgpUpdateBaseline();
+void sgpUpdateHumidity(TempData &temp_data);
 inline void mqttPublish(const char *topic, int payload);
-
 inline void mqttPublish(const char *topic, float payload, int precision);
+inline void mqttPublish(const char *topic, const char *payload);
 
 
 // Global objects
@@ -86,20 +80,23 @@ void setup() {
     pms.sleep();
 
     // Init AHT20
-    while (aht20.begin() != true) {  // aht20.begin() initialize and calibrate the sensor
+    if (aht20.begin() != true) {  // aht20.begin() initialize and calibrate the sensor
         DEBUG_PRINT("AHT20 begin failed");
+        mqttPublish(topic_err, "AHT20 begin failed");
         delay(5000);
     }
 
     // Init BMP180
-    while (bmp180.begin(BMP085_ULTRALOWPOWER) != true) {  // By using ULTRALOWPOWER with reduce the samples to 3
+    if (bmp180.begin(BMP085_ULTRALOWPOWER) != true) {  // By using ULTRALOWPOWER with reduce the samples to 3
         DEBUG_PRINT("BMP180 begin failed");
+        mqttPublish(topic_err, "BMP180 begin failed");
         delay(5000);
     }
 
     // Init SGP30
-    while (sgp30.begin() != true) {  // sgp30.begin() initialize and calibrate the sensor
+    if (sgp30.begin() != true) {  // sgp30.begin() initialize and calibrate the sensor
         DEBUG_PRINT("SGP30 begin failed");
+        mqttPublish(topic_err, "SGP30 begin failed");
         delay(5000);
     }
     // Read from flash baselines if available
@@ -118,6 +115,7 @@ void setup() {
         LittleFS.end();
     } else {
         DEBUG_PRINT("Failed to mount FS");
+        mqttPublish(topic_err, "Failed to mount FS");
     }
 
     // Ready
@@ -144,7 +142,8 @@ void loop() {
 
     // Read SGP30 data
     sgpMeasure();
-    sgpUpdateBaseline(data);
+    sgpUpdateHumidity(data);
+    sgpUpdateBaseline();
 
     lightsleep(60 * 5); // 4 minutes
 }
@@ -164,11 +163,14 @@ void pmsMeasure() {
     while (Serial1.available()) { Serial1.read(); }  // Clear serial buffer
     pms.wakeUp();
     lightsleep(40); // 40 seconds
-    pms.requestRead();
-    Serial1.flush();
-    pms.readUntil(data, 5000);
-    pms.sleep();
-    Serial1.flush();
+    pms.requestRead(); Serial1.flush();
+    if (!pms.readUntil(data, 5000)) {
+        DEBUG_PRINT("PMS read failed");
+        mqttPublish(topic_err, "PMS read failed");
+        pms.sleep(); Serial1.flush();
+        return;
+    }
+    pms.sleep(); Serial1.flush();
 
     // Increase counter for caqi calculation
     pm_counter++;
@@ -197,7 +199,11 @@ void pmsMeasure() {
 
 void ahtMeasure(TempData &temp_data) {
     sensors_event_t temp, hum;
-    aht20.getEvent(&hum, &temp);
+    if (!aht20.getEvent(&hum, &temp)) {
+        DEBUG_PRINT("AHT20 getEvent failed");
+        mqttPublish(topic_err, "AHT20 getEvent failed");
+        return;
+    };
 
     if (temp_data.temperature != 0) {
         // Average temperature with value from bmp180
@@ -229,23 +235,29 @@ void sgpMeasure() {
         if (sgp30.IAQmeasure()) {
             mqttPublish(topic_tvoc, sgp30.TVOC);
             mqttPublish(topic_eco2, sgp30.eCO2);
+        } else {
+            DEBUG_PRINT("SGP30 IAQmeasure failed");
+            mqttPublish(topic_err, "SGP30 IAQmeasure failed");
         }
+
         mqttPublish(topic_h2, sgp30.rawH2);
         mqttPublish(topic_ethanol, sgp30.rawEthanol);
+    } else {
+        DEBUG_PRINT("SGP30 IAQmeasureRaw failed");
+        mqttPublish(topic_err, "SGP30 IAQmeasureRaw failed");
     }
 }
 
 
-void sgpUpdateBaseline(TempData &temp_data) {
-    static int counter = 0;
+void sgpUpdateBaseline() {
+    static long next_baseline_update = 43200000;
 
-    // 12 * 5 minutes = 1 hour
-    // Every hour saves the baseline in the flash storage
-    if (counter == 12) {
-        counter = 0;
-    } else {
-        counter++;
+    // Wait for 12 hours before saving the first baseline
+    if (millis() <= next_baseline_update) {
         return;
+    } else {
+        // After the first baseline is saved, update it every hour
+        next_baseline_update = millis() + 3600000;
     }
 
     // Read baseline from SGP30
@@ -261,8 +273,21 @@ void sgpUpdateBaseline(TempData &temp_data) {
             DEBUG_PRINT("Baseline written to flash");
         } else {
             DEBUG_PRINT("Failed to write, baseline.txt");
+            mqttPublish(topic_err, "Failed to write, baseline.txt");
         }
         LittleFS.end();
+    }
+}
+
+
+void sgpUpdateHumidity(TempData &temp_data) {
+    static long next_humidity_update = 0;
+
+    // Update humidity every 6 hours
+    if (millis() <= next_humidity_update) {
+        return;
+    } else {
+        next_humidity_update = millis() + 21600000;
     }
 
     // Set abosulute humidity
@@ -271,16 +296,57 @@ void sgpUpdateBaseline(TempData &temp_data) {
 
 
 inline void mqttPublish(const char *topic, int payload) {
-    mqttClient.beginMessage(topic);
+    if (!mqttClient.beginMessage(topic)) {
+        DEBUG_PRINT("MQTT begin message failed");
+        return;
+    }
+
+    #ifdef DEBUG
+        Serial.print(topic);
+        Serial.print(": ");
+        Serial.println(payload);
+    #endif
     mqttClient.print(payload);
-    mqttClient.endMessage();
+
+    if (!mqttClient.endMessage())
+        DEBUG_PRINT("MQTT end message failed");
 }
 
 
 inline void mqttPublish(const char *topic, float payload, int precision) {
-    mqttClient.beginMessage(topic);
+    if (!mqttClient.beginMessage(topic)) {
+        DEBUG_PRINT("MQTT begin message failed");
+        return;
+    }
+    
+    #ifdef DEBUG
+        Serial.print(topic);
+        Serial.print(": ");
+        Serial.println(payload, precision);
+    #endif
+    
     mqttClient.print(payload, precision);
-    mqttClient.endMessage();
+
+    if (!mqttClient.endMessage())
+        DEBUG_PRINT("MQTT end message failed");
+}
+
+
+inline void mqttPublish(const char *topic, const char *payload) {
+    if (!mqttClient.beginMessage(topic, false, 1, false)) {
+        DEBUG_PRINT("MQTT begin message failed");
+        return;
+    }
+
+    #ifdef DEBUG
+        Serial.print(topic);
+        Serial.print(": ");
+        Serial.println(payload);
+    #endif
+    mqttClient.print(payload);
+
+    if (!mqttClient.endMessage())
+        DEBUG_PRINT("MQTT end message failed");
 }
 
 
